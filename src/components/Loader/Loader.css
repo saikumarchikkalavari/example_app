@@ -1,0 +1,51 @@
+.app-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive spinner sizing */
+.app-loader__spinner {
+  width: clamp(36px, 8vw, 84px);
+  height: clamp(36px, 8vw, 84px);
+  animation: spin 1s linear infinite;
+}
+
+.app-loader__path {
+  stroke: #2563eb; /* blue-600 */
+  stroke-linecap: round;
+  stroke-dasharray: 90;
+  stroke-dashoffset: 60;
+}
+
+.app-loader__message {
+  margin-top: 12px;
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+  color: var(--text-color, #111827);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Size modifiers */
+.app-loader--sm .app-loader__spinner { width: 28px; height: 28px; }
+.app-loader--md .app-loader__spinner { width: 48px; height: 48px; }
+.app-loader--lg .app-loader__spinner { width: 80px; height: 80px; }
+
+/* Make sure loader centers within parent containers */
+.app-loader--fill {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

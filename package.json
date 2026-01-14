@@ -1,0 +1,71 @@
+{
+  "name": "example_app",
+  "version": "0.1.0",
+  "private": true,
+  "resolutions": {
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.6",
+    "@mui/material": "^5.14.6",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.126",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^6.13.0",
+    "react-scripts": "5.0.1",
+    "samplebundle": "git+https://github.com/saikumarchikkalavari/samplebundle.git",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:ci": "cross-env CI=true react-scripts test -- --reporters=default --reporters=jest-junit --watchAll=false",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^react/jsx-runtime$": "<rootDir>/node_modules/react/jsx-runtime.js",
+      "^react$": "<rootDir>/node_modules/react",
+      "^react-dom$": "<rootDir>/node_modules/react-dom",
+      "^samplebundle$": "<rootDir>/node_modules/samplebundle/dist/index.js",
+      "^samplebundle/aggrid$": "<rootDir>/node_modules/samplebundle/dist/components/aggrid/index.js",
+      "^samplebundle/tanstackquery$": "<rootDir>/node_modules/samplebundle/dist/tanstackquery/index.js"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(samplebundle)/)"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest-junit": "^13.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
