@@ -64,7 +64,8 @@ pipeline {
         stage('Run Tests') {
             steps {
                 echo 'Running test cases...'
-                sh 'npm test'
+                // Run tests in CI mode (non-interactive)
+                sh 'CI=true npm test -- --coverage --watchAll=false'
             }
         }
         
