@@ -6,7 +6,7 @@ pipeline {
     }
     
     environment {
-        SAMPLEBUNDLE_REPO = 'https://github.com/nikkalavari/samplebundle.git'
+        SAMPLEBUNDLE_REPO = 'https://github.com/saikumarchikkalavari/samplebundle.git'
         SAMPLEBUNDLE_BRANCH = 'main' // Change if needed
     }
     
