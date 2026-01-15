@@ -40,5 +40,19 @@ pipeline {
         }
         
     }
+    
+    post {
+        always {
+            junit 'junit.xml'
+            publishHTML([
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'coverage/lcov-report',
+                reportFiles: 'index.html',
+                reportName: 'Code Coverage Report'
+            ])
+        }
+    }
 }
  

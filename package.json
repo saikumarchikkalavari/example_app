@@ -60,5 +60,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^samplebundle/aggrid$": "<rootDir>/node_modules/samplebundle/dist/components/aggrid/index.js",
+      "^samplebundle/tanstackquery$": "<rootDir>/node_modules/samplebundle/dist/tanstackquery/index.js",
+      "^samplebundle$": "<rootDir>/node_modules/samplebundle/dist/index.js"
+    }
+  },
+  "jest-junit": {
+    "outputDirectory": ".",
+    "outputName": "junit.xml",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{title}",
+    "ancestorSeparator": " > ",
+    "usePathForSuiteName": "true"
   }
 }
