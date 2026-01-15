@@ -1,21 +1,18 @@
 module.exports = {
+  roots: ['<rootDir>/src'],
   testMatch: [
-    '**/__tests__/**/*.[jt]s?(x)',
-    '**/?(*.)+(spec|test).[jt]s?(x)'
+    '<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}',
+    '<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}'
   ],
-  testPathIgnorePatterns: [
-    '/node_modules/',
-    '/build/'
-  ],
+  testEnvironment: 'jsdom',
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
   },
-  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json'],
-  testEnvironment: 'jsdom',
-  roots: ['<rootDir>/src'],
-  collectCoverageFrom: [
-    'src/**/*.{js,jsx,ts,tsx}',
-    '!src/**/*.d.ts',
+  transformIgnorePatterns: [
+    '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$'
   ],
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/$1',
+  },
 };
  
