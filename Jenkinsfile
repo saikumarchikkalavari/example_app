@@ -18,12 +18,7 @@ pipeline {
             steps {
                 echo 'Building application and running tests...'
                 sh 'npm run build'
-                sh '''
-                    echo "Checking for test files:"
-                    ls -la src/__tests__/ || echo "Test directory not found"
-                    find src -name "*.test.*" -o -name "*.spec.*" || echo "No test files found"
-                '''
-                sh 'npm run test:ci || true'
+                sh 'npm run test:ci'
             }
         }
     }
