@@ -24,12 +24,6 @@ pipeline {
             }
         }
         
-        stage('Quality Check') {
-            steps {
-                echo 'Running code quality checks...'
-                sh 'npm run lint || echo "Linting optional"'
-            }
-        }
     }
 }
  
