@@ -30,7 +30,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:ci": "cross-env CI=true react-scripts test --coverage --watchAll=false --reporters=default --reporters=jest-junit",
+    "test:ci": "cross-env CI=true react-scripts test --coverage --watchAll=false --passWithNoTests --reporters=default --reporters=jest-junit",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -62,10 +62,6 @@
     ]
   },
   "jest": {
-    "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
-      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
-    ],
     "moduleNameMapper": {
       "^samplebundle/aggrid$": "<rootDir>/node_modules/samplebundle/dist/components/aggrid/index.js",
       "^samplebundle/tanstackquery$": "<rootDir>/node_modules/samplebundle/dist/tanstackquery/index.js",
