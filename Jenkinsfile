@@ -10,17 +10,32 @@ pipeline {
             steps {
                 echo 'Checking out code and installing dependencies...'
                 checkout scm
-                sh 'npm install'
+                script {
+                    if (isUnix()) {
+                        sh 'npm install'
+                    } else {
+                        bat 'npm install'
+                    }
+                }
             }
         }
         
         stage('Build and Test') {
             steps {
                 echo 'Building application and running tests...'
-                sh '''
-                    npm run build
-                    npm run test:ci || echo "Tests completed with warnings"
-                '''
+                script {
+                    if (isUnix()) {
+                        sh '''
+                            npm run build
+                            npm run test:ci || echo "Tests completed with warnings"
+                        '''
+                    } else {
+                        bat '''
+                            npm run build
+                            npm run test:ci || echo Tests completed with warnings
+                        '''
+                    }
+                }
             }
         }
         
