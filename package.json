@@ -33,19 +33,6 @@
     "test:ci": "cross-env CI=true react-scripts test --coverage --watchAll=false --reporters=default --reporters=jest-junit",
     "eject": "react-scripts eject"
   },
-  "jest": {
-    "moduleNameMapper": {
-      "^react/jsx-runtime$": "<rootDir>/node_modules/react/jsx-runtime.js",
-      "^react$": "<rootDir>/node_modules/react",
-      "^react-dom$": "<rootDir>/node_modules/react-dom",
-      "^samplebundle$": "<rootDir>/node_modules/samplebundle/dist/index.js",
-      "^samplebundle/aggrid$": "<rootDir>/node_modules/samplebundle/dist/components/aggrid/index.js",
-      "^samplebundle/tanstackquery$": "<rootDir>/node_modules/samplebundle/dist/tanstackquery/index.js"
-    },
-    "transformIgnorePatterns": [
-      "node_modules/(?!(samplebundle)/)"
-    ]
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
