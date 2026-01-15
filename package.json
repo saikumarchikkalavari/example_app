@@ -62,6 +62,10 @@
     ]
   },
   "jest": {
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+    ],
     "moduleNameMapper": {
       "^samplebundle/aggrid$": "<rootDir>/node_modules/samplebundle/dist/components/aggrid/index.js",
       "^samplebundle/tanstackquery$": "<rootDir>/node_modules/samplebundle/dist/tanstackquery/index.js",

@@ -1,111 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="46" failures="0" errors="0" time="7.188">
-  <testsuite name="src\__tests__\query\createQueryClient.spec.ts" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:20:49" time="1.248" tests="5">
-    <testcase classname="createQueryClient (consumer tests)" name="creates a QueryClient with defaults" time="0.002">
+<testsuites name="jest tests" tests="46" failures="0" errors="0" time="6.459">
+  <testsuite name="src\__tests__\query\createQueryClient.spec.ts" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:38:23" time="1.095" tests="5">
+    <testcase classname="createQueryClient (consumer tests)" name="creates a QueryClient with defaults" time="0.004">
     </testcase>
     <testcase classname="createQueryClient (consumer tests)" name="merges custom configuration" time="0.001">
     </testcase>
-    <testcase classname="createQueryClient (consumer tests)" name="default refetchOnWindowFocus is false" time="0.001">
+    <testcase classname="createQueryClient (consumer tests)" name="default refetchOnWindowFocus is false" time="0">
     </testcase>
-    <testcase classname="createQueryClient (consumer tests)" name="retry function avoids retrying 4xx errors" time="0.001">
+    <testcase classname="createQueryClient (consumer tests)" name="retry function avoids retrying 4xx errors" time="0">
     </testcase>
     <testcase classname="createQueryClient (consumer tests)" name="staleTime default is reasonable (&gt;0)" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="src\__tests__\query\fetchAndUseAppQuery.spec.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:20:49" time="2.1" tests="9">
-    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="READ: fetches and returns product list" time="0.057">
+  <testsuite name="src\__tests__\query\fetchAndUseAppQuery.spec.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:38:23" time="1.754" tests="9">
+    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="READ: fetches and returns product list" time="0.045">
     </testcase>
-    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="SEARCH: returns filtered results by title (case-insensitive)" time="0.036">
+    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="SEARCH: returns filtered results by title (case-insensitive)" time="0.04">
     </testcase>
-    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="SEARCH: returns empty results when none match" time="0.031">
+    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="SEARCH: returns empty results when none match" time="0.023">
     </testcase>
-    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="CREATE: POST adds a product and list is refetched to include it" time="0.064">
+    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="CREATE: POST adds a product and list is refetched to include it" time="0.048">
     </testcase>
-    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="UPDATE: PUT updates a product and list reflects change" time="0.056">
+    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="UPDATE: PUT updates a product and list reflects change" time="0.048">
     </testcase>
-    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="DELETE: DELETE removes a product from the list after refetch" time="0.056">
+    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="DELETE: DELETE removes a product from the list after refetch" time="0.032">
     </testcase>
-    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="CREATE error triggers onError" time="0.075">
+    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="CREATE error triggers onError" time="0.071">
     </testcase>
-    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="DEDUP: concurrent readers with same key perform a single network call" time="0.006">
+    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="DEDUP: concurrent readers with same key perform a single network call" time="0.008">
     </testcase>
-    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="STALENESS: staleTime prevents immediate refetch on a second subscriber" time="0.042">
-    </testcase>
-  </testsuite>
-  <testsuite name="src\__tests__\AgGridTable\rendering.test.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:20:49" time="2.405" tests="5">
-    <testcase classname="Rendering &amp; Basic Functionality" name="component renders successfully with minimum required props" time="0.383">
-    </testcase>
-    <testcase classname="Rendering &amp; Basic Functionality" name="correct theme class applied - &quot;ag-theme-alpine&quot; present in the DOM" time="0.041">
-    </testcase>
-    <testcase classname="Rendering &amp; Basic Functionality" name="custom className appended correctly alongside the default theme class" time="0.044">
-    </testcase>
-    <testcase classname="Rendering &amp; Basic Functionality" name="AgGridReact component is rendered as a child" time="0.117">
-    </testcase>
-    <testcase classname="Rendering &amp; Basic Functionality" name="empty state handling - renders correctly when rowData is an empty array" time="0.062">
+    <testcase classname="Product CRUD + Search using useAppQuery / useMutation" name="STALENESS: staleTime prevents immediate refetch on a second subscriber" time="0.04">
     </testcase>
   </testsuite>
-  <testsuite name="src\__tests__\AgGridTable\edgecases.test.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:20:49" time="2.532" tests="5">
-    <testcase classname="Edge Cases" name="empty columnDefs array - component behavior" time="0.306">
+  <testsuite name="src\__tests__\AgGridTable\rendering.test.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:38:23" time="2.002" tests="5">
+    <testcase classname="Rendering &amp; Basic Functionality" name="component renders successfully with minimum required props" time="0.324">
     </testcase>
-    <testcase classname="Edge Cases" name="mismatched column fields - columnDefs field doesn&apos;t exist in rowData" time="0.137">
+    <testcase classname="Rendering &amp; Basic Functionality" name="correct theme class applied - &quot;ag-theme-alpine&quot; present in the DOM" time="0.032">
     </testcase>
-    <testcase classname="Edge Cases" name="invalid height/width values (negative numbers, invalid strings) should not crash" time="0.133">
+    <testcase classname="Rendering &amp; Basic Functionality" name="custom className appended correctly alongside the default theme class" time="0.036">
     </testcase>
-    <testcase classname="Edge Cases" name="very long cell content - text renders fully" time="0.117">
+    <testcase classname="Rendering &amp; Basic Functionality" name="AgGridReact component is rendered as a child" time="0.1">
     </testcase>
-    <testcase classname="Edge Cases" name="special characters and duplicate row data handled properly" time="0.081">
-    </testcase>
-  </testsuite>
-  <testsuite name="src\__tests__\AgGridTable\pagination.test.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:20:49" time="2.591" tests="5">
-    <testcase classname="Pagination" name="pagination enabled when pagination prop is true" time="0.395">
-    </testcase>
-    <testcase classname="Pagination" name="pagination disabled when pagination prop is false or undefined" time="0.116">
-    </testcase>
-    <testcase classname="Pagination" name="pagination controls render correctly when enabled" time="0.123">
-    </testcase>
-    <testcase classname="Pagination" name="pagination respects paginationPageSize" time="0.119">
-    </testcase>
-    <testcase classname="Pagination" name="pagination page size selector honors true mapping" time="0.097">
+    <testcase classname="Rendering &amp; Basic Functionality" name="empty state handling - renders correctly when rowData is an empty array" time="0.051">
     </testcase>
   </testsuite>
-  <testsuite name="src\__tests__\AgGridTable\data.test.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:20:49" time="2.575" tests="5">
-    <testcase classname="Data Scenarios" name="large dataset (1000+ rows) renders without errors" time="0.406">
+  <testsuite name="src\__tests__\AgGridTable\edgecases.test.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:38:23" time="2.08" tests="5">
+    <testcase classname="Edge Cases" name="empty columnDefs array - component behavior" time="0.234">
     </testcase>
-    <testcase classname="Data Scenarios" name="single row of data displays correctly" time="0.109">
+    <testcase classname="Edge Cases" name="mismatched column fields - columnDefs field doesn&apos;t exist in rowData" time="0.124">
     </testcase>
-    <testcase classname="Data Scenarios" name="dynamic data updates - rowData changes trigger re-render" time="0.15">
+    <testcase classname="Edge Cases" name="invalid height/width values (negative numbers, invalid strings) should not crash" time="0.104">
     </testcase>
-    <testcase classname="Data Scenarios" name="column definition changes - columnDefs updates reflect in table" time="0.125">
+    <testcase classname="Edge Cases" name="very long cell content - text renders fully" time="0.075">
     </testcase>
-    <testcase classname="Data Scenarios" name="null/undefined values in rowData handled gracefully" time="0.039">
-    </testcase>
-  </testsuite>
-  <testsuite name="src\__tests__\AgGridTable\props.test.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:20:49" time="2.674" tests="7">
-    <testcase classname="Props Handling" name="columnDefs passed correctly to AgGridReact (headers show)" time="0.422">
-    </testcase>
-    <testcase classname="Props Handling" name="rowData passed correctly to AgGridReact and rows display" time="0.1">
-    </testcase>
-    <testcase classname="Props Handling" name="default height (500) applied when not specified" time="0.045">
-    </testcase>
-    <testcase classname="Props Handling" name="custom height overrides default (pixels, percentages, auto)" time="0.145">
-    </testcase>
-    <testcase classname="Props Handling" name="default width (100%) applied and custom width overrides" time="0.091">
-    </testcase>
-    <testcase classname="Props Handling" name="domLayout=&quot;autoHeight&quot; is always set on AgGridReact" time="0.035">
-    </testcase>
-    <testcase classname="Props Handling" name="rest props spread correctly to AgGridReact (test with rowSelection)" time="0.113">
+    <testcase classname="Edge Cases" name="special characters and duplicate row data handled properly" time="0.084">
     </testcase>
   </testsuite>
-  <testsuite name="src\__tests__\AgGridTable\events.test.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:20:49" time="2.872" tests="5">
-    <testcase classname="Event Handling" name="onRowClicked callback triggers when a row is clicked" time="0.489">
+  <testsuite name="src\__tests__\AgGridTable\pagination.test.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:38:23" time="2.157" tests="5">
+    <testcase classname="Pagination" name="pagination enabled when pagination prop is true" time="0.319">
     </testcase>
-    <testcase classname="Event Handling" name="event object passed to onRowClicked contains correct row data" time="0.198">
+    <testcase classname="Pagination" name="pagination disabled when pagination prop is false or undefined" time="0.101">
     </testcase>
-    <testcase classname="Event Handling" name="multiple row clicks handled correctly" time="0.192">
+    <testcase classname="Pagination" name="pagination controls render correctly when enabled" time="0.113">
     </testcase>
-    <testcase classname="Event Handling" name="optional callback - component works when onRowClicked is not provided" time="0.073">
+    <testcase classname="Pagination" name="pagination respects paginationPageSize" time="0.083">
     </testcase>
-    <testcase classname="Event Handling" name="onSelectionChanged callback triggers and contains selected rows" time="0.167">
+    <testcase classname="Pagination" name="pagination page size selector honors true mapping" time="0.078">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\__tests__\AgGridTable\data.test.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:38:23" time="2.165" tests="5">
+    <testcase classname="Data Scenarios" name="large dataset (1000+ rows) renders without errors" time="0.332">
+    </testcase>
+    <testcase classname="Data Scenarios" name="single row of data displays correctly" time="0.098">
+    </testcase>
+    <testcase classname="Data Scenarios" name="dynamic data updates - rowData changes trigger re-render" time="0.121">
+    </testcase>
+    <testcase classname="Data Scenarios" name="column definition changes - columnDefs updates reflect in table" time="0.108">
+    </testcase>
+    <testcase classname="Data Scenarios" name="null/undefined values in rowData handled gracefully" time="0.044">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\__tests__\AgGridTable\props.test.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:38:23" time="2.211" tests="7">
+    <testcase classname="Props Handling" name="columnDefs passed correctly to AgGridReact (headers show)" time="0.334">
+    </testcase>
+    <testcase classname="Props Handling" name="rowData passed correctly to AgGridReact and rows display" time="0.087">
+    </testcase>
+    <testcase classname="Props Handling" name="default height (500) applied when not specified" time="0.05">
+    </testcase>
+    <testcase classname="Props Handling" name="custom height overrides default (pixels, percentages, auto)" time="0.097">
+    </testcase>
+    <testcase classname="Props Handling" name="default width (100%) applied and custom width overrides" time="0.066">
+    </testcase>
+    <testcase classname="Props Handling" name="domLayout=&quot;autoHeight&quot; is always set on AgGridReact" time="0.031">
+    </testcase>
+    <testcase classname="Props Handling" name="rest props spread correctly to AgGridReact (test with rowSelection)" time="0.096">
+    </testcase>
+  </testsuite>
+  <testsuite name="src\__tests__\AgGridTable\events.test.tsx" errors="0" failures="0" skipped="0" timestamp="2026-01-15T05:38:23" time="2.432" tests="5">
+    <testcase classname="Event Handling" name="onRowClicked callback triggers when a row is clicked" time="0.407">
+    </testcase>
+    <testcase classname="Event Handling" name="event object passed to onRowClicked contains correct row data" time="0.176">
+    </testcase>
+    <testcase classname="Event Handling" name="multiple row clicks handled correctly" time="0.171">
+    </testcase>
+    <testcase classname="Event Handling" name="optional callback - component works when onRowClicked is not provided" time="0.09">
+    </testcase>
+    <testcase classname="Event Handling" name="onSelectionChanged callback triggers and contains selected rows" time="0.14">
     </testcase>
   </testsuite>
 </testsuites>
